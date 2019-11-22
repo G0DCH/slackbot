@@ -1,2 +1,5 @@
 v2/.env
 v3/.env
+
+node_modules/
+
