@@ -25,6 +25,8 @@ rtm.on('message', function(message)
 			case '고양이':
 				cat(rtm, channel);
 				break;
+			case '배포 테스트':
+				rtm.sendMessage('Slack 배포 테스트', channel);
 			default:
 				rtm.sendMessage('독수리, 치타, 고양이 중에 말해주세요.', channel);
 		}
