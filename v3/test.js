@@ -67,6 +67,7 @@ rtm.on('message', function(message)
 				}
 				console.log("받은 메시지: ", text);
 				console.log("테스트가 정상 종료되었습니다.");
+				rtm.sendMessage("Slack 배포 테스트 성공!", tchannel);
 				process.exit(0);
 				break;
 			default:				
